@@ -7,7 +7,7 @@ dates=strptime(strDates,format="%d/%m/%Y %H:%M:%S")
 png(file="plot4.png",width=480, height=480)
 par(mfrow=c(2,2),mar=c(4,4,1,1))
 
-plot(dates,as.numeric(levels(data$Global_active_power)[data$Global_active_power]),xlab="",ylab="Global Active Power (kilowatts)",type="n")
+plot(dates,as.numeric(levels(data$Global_active_power)[data$Global_active_power]),xlab="",ylab="Global Active Power",type="n")
 lines(dates,as.numeric(levels(data$Global_active_power)[data$Global_active_power]))
 
 plot(dates,as.numeric(levels(data$Voltage)[data$Voltage]),xlab="datetime",ylab="Voltage",type="n")
